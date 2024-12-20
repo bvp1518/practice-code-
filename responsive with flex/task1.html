@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 100vh;
+        }
+
+        .container {
+            height:100vh;
+            background-image: linear-gradient(green,gray);
+        }
+
+        .navbar{
+            background-color: gray;
+            height:10vh;
+            display: flex;
+        }
+
+        .logo {
+            font-size: 22px;
+            display:flex;
+            align-items: center;
+            padding-left: 20px;
+            flex: 1;
+        }
+
+        .menu{
+            display: flex;
+            text-decoration: none;
+            flex: 2;
+        }
+
+        a{
+            text-decoration: none;
+            color: beige;
+            font-weight:bold;           
+        }
+
+        .menu_items{
+            flex: 1;
+            text-align: center;
+            line-height: 10vh;
+            font-size: 1.1rem;
+            cursor: pointer;
+            background-color:gray;
+        }
+
+        .menu_items:hover{
+            background-color: rgb(46, 121, 121);
+        }
+
+        .sub-menu{
+            display:none;
+        }
+
+        .menu_items:hover > .sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="menu">
+                <div class="menu_items">
+                    <a href="#">home</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">about</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">contact</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">course</a>
+                    <div class="sub-menu">
+                        <div class="menu_items">
+                            <a href="#">HTML</a>
+                        </div>
+                        <div class="menu_items">
+                            <a href="#">JAVA</a>
+                        </div>
+                        <div class="menu_items">
+                            <a href="#">CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

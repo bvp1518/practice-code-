@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        table ,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            empty-cells: hide;
+            text-align: center;
+        }
+
+        table.table {
+            border-collapse: separate;
+            border-spacing: 0;
+            empty-cells: hide;
+        }
+
+        tbody>tr>td {
+            padding: 20px;
+        }
+
+        thead>tr>td {
+            width: 10px;
+        }
+
+        .noborders {
+            border: 0 
+        }
+
+        .title {
+            font-size: large;
+            text-align: left;
+            /* border: none; */
+            /* background-color: red; */
+        }
+
+        .bg-green {
+            background-color: rgb(134, 234, 134);
+        }
+
+        .bg-yellow {
+            background-color: rgb(226, 182, 61);
+        }
+
+        .bg-blue {
+            background-color: rgb(165, 215, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <caption>Table</caption>
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bg-green">H</td>
+                <td class="noborders" colspan="5">Periodic Table of Elements</td>
+                <td class="bg-yellow">He</td>
+            </tr>
+            <tr>
+                <td class="bg-green">Li</td>
+                <td class="bg-blue">Be</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-white">B</td>
+                <td class="bg-yellow">Ne</td>
+            </tr>
+            <tr>
+                <td class="bg-green">Na</td>
+                <td class="bg-blue">Mg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="bg-white">Ai</td>
+                <td class="bg-yellow">Ar</td>
+            </tr>
+            <tr>
+                <td class="bg-green">K</td>
+                <td class="bg-blue">Ca</td>
+                <td>Sc</td>
+                <td>Ti</td>
+                <td>V</td>
+                <td>Ga</td>
+                <td class="bg-yellow">Kr</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

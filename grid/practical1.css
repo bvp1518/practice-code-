@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* align-items: center; */
+}
+
+.items{
+    padding: 10px;
+    color: white;
+    text-align: center;
+
+}
+
+.header{
+    background-color: rgb(175, 181, 59);
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+}
+
+.menu{
+    background-color: rgb(107, 107, 186);
+    grid-column-start: 2 ;
+    grid-column-end: 5;
+    /* grid-column: 2 span / 4  */
+}
+
+.hero{
+    background-color: rgb(150, 64, 64);
+    grid-column: 1 / -1;
+}
+
+.main{
+    background-color: rgb(121, 180, 81);
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row: 2 span / 5;
+}
+
+
+.image{
+    background-color: rgb(5, 101, 69);
+}
+
+.extra{
+    background-color: rgb(110, 78, 78);
+}
+
+.banner{
+    background-color: cadetblue;
+    grid-column: 1 / -1;
+}

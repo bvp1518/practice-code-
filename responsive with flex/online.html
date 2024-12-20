@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="online.css">
+</head>
+
+<body>
+ <div class="container">
+        <div class="navbar">
+            <div class="exclusiv">Exclusive</div>
+
+            <div class="menu">
+                <div class="menu_items">
+                    <a href="#">home</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">About us</a>
+                </div>
+                <div class="menu_items">
+                    <a href="#">signup</a>
+                </div>
+            </div>
+
+            <div class="right_section">
+
+                <div class="input-wrapper">
+                    <input type="text" placeholder="What are you looking for?">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="serach_Icon">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div class="wishIcon">
+                    <i class="fa fa-heart"></i> <!-- Heart icon for wishlist -->
+                </div>
+                <div class="cart_Icon">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fa fa-bars"></i>
+                    <div class="sub_menu">
+                        <div class="menu_items">
+                            <a href="#">home</a>
+                        </div>
+                        <div class="menu_items">
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="menu_items">
+                            <a href="#">About us</a>
+                        </div>
+                        <div class="menu_items">
+                            <a href="#">signup</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const subMenu = document.querySelector(".sub_menu");
+
+            hamburger.addEventListener("click", function () {
+                subMenu.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>

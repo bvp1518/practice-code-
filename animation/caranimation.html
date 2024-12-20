@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("/images/natural1.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .car {
+            position: fixed;
+            bottom: 0px;
+            left: -200px;
+            animation: carLeftToRight 4s 0s infinite linear;
+        }
+
+        @keyframes carLeftToRight {
+            0% {
+                left: -200px;
+            }
+
+            100% {
+                left: 120%;
+            }
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="ball">
+        <img src="/images/ball.png" alt="ball" width="100px" height="100px">
+    </div>
+
+    <div class="car">
+        <img src="/images/car.png" alt="car" width="400px" height="400px">
+    </div>
+</body>
+</html>

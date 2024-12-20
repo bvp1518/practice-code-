@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    flex: 1;
+    gap: 10px;
+    padding: 10px;
+}
+
+.items {
+    min-height: 10vh;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: black;
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.nav {
+    background-color: rgb(40, 29, 193);
+    flex: 1;
+}
+
+.content {
+    background-color: rgb(62, 3, 117);
+    flex: 2;
+}
+
+
+img{
+    height:200px;
+    width:200px;
+}
+
+.side {
+    background-color: rgb(5, 84, 58);
+    flex: 1;
+}
+
+.footer {
+    background-color: black;
+    flex: 1;
+}
+
+.title{
+    font-size: 18px;
+}
+
+
+/* @media screen and (max-width: 1000px) {
+    .main {
+        flex-direction: column; 
+    }
+
+    .nav, .content {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title{
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .side {
+        flex: 1; 
+        margin-top: 10px; 
+    }
+
+    .footer, .nav{
+        margin-top: 8px; 
+    }
+} */
+
+@media screen and (max-width: 1000px) {
+    .main {
+        flex-direction: column; 
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+        order: -1; /* Ensure the title stays at the top */
+    }
+
+    .information {
+        display: flex;
+        flex-direction: row; /* Make image and paragraph side by side */
+        align-items: center; /* Align items vertically */
+        gap: 10px; /* Add spacing between image and paragraph */
+    }
+
+    .side {
+        flex: 1; 
+        margin-top: 10px; 
+    }
+
+    .footer, .nav {
+        margin-top: 8px; 
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .main {
+        flex-direction: column;
+    }
+    
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column; /* Stack image and paragraph vertically */
+        gap: 10px;
+    }
+
+    .nav, .side {
+        flex: 1;
+    }
+
+    .footer, .nav {
+        margin-top: 8px;
+    }
+}
+
+
+/* 
+
+
+@media screen and (max-width: 807px) {
+    .main {
+        flex-direction: column;
+    }
+    
+     .content {
+        flex: 1; 
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;
+    } 
+
+    .nav, .side {
+        flex: 1;
+    }
+
+    .footer, .nav{
+        margin-top: 8px; 
+    }
+} */

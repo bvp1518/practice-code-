@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    width: 100vw;
+    flex-wrap: wrap; 
+}
+
+.sub_container1,
+.sub_container2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid red;
+}
+
+.sub_container2 {
+    border-color: black;
+}
+
+.second_div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex: 1;
+}
+
+.left_items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 2;
+}
+
+.items {
+    border: 1px solid rgb(14, 25, 21);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 50px;
+    flex: 1; /* Default size to allow responsiveness */
+}
+
+.item1 {
+    background-color: rgb(27, 215, 165);
+    flex: 1;
+}
+
+.item2 {
+    background-color: rgb(165, 101, 101);
+    flex: 3;
+}
+
+.item3 {
+    background-color: rgb(209, 121, 28);
+    flex: 3;
+}
+
+.item4 {
+    background-color: rgb(125, 197, 23);
+    flex: 2;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cont2_leftcontainer,
+.cont2_rightcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+    height: 50vh;
+}
+
+.item5 {
+    background-color: rgb(16, 186, 115);
+    flex: 1;
+}
+
+.item6 {
+    background-color: rgb(0, 132, 255);
+    flex: 0.5;
+}
+
+.item7 {
+    background-color: rgb(166, 0, 255);
+    flex: 1.5;
+}
+
+.item8 {
+    background-color: rgb(90, 4, 63);
+    flex: 1.5;
+}
+
+.item9 {
+    background-color: rgb(255, 0, 76);
+    flex: 1;
+}
+
+.item10 {
+    background-color: rgb(251, 255, 0);
+    flex: 0.5;
+}
+
+.item11 {
+    background-color: rgb(77, 255, 0);
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column; 
+    }
+}    
+
+@media screen and (max-width:800px){
+    .sub_container1,
+    .sub_container2{
+        flex-direction: column;
+        flex: 1;
+    }
+    .second_div{
+        flex-direction: column;
+    }
+    .left_items{
+        flex:1;
+    }
+    .item4{
+        flex:1;
+    }
+    .div1 {
+        flex-direction: column;
+    }
+
+    .cont2_leftcontainer,
+    .cont2_rightcontainer {
+        height: auto; 
+    }
+
+    .items {
+        min-height: 40px; 
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .items {
+        font-size: 14px; 
+        min-height: 50px; 
+    }
+
+    .container {
+        gap: 10px; 
+    }
+
+    .div1 {
+        gap: 10px;
+    }
+}

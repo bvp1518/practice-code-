@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin:10px;
+    /* width:720px; */
+    background-color: rgb(205, 223, 170);
+    display: grid;
+    grid-template-columns: repeat(3,[col-start] 1fr [col-end]);
+    grid-template-rows: [header-start]120px[header-end menu-start] 60px [menu-end box-start] 100px[box-end content-start] 400px [content-end footer-start] 50px [footer-end];
+    gap: 15px;
+}
+
+.item {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: white;
+}
+
+.header {
+    background-color: rgb(16, 16, 16);
+    grid-row: header-start / header-end;
+    grid-column:col-start 1 / col-end 3;
+}
+
+.menu {
+    background-color: aqua;
+    grid-row: menu-start / menu-end;
+    grid-column:col-start 1 / col-end 3;
+}
+
+.box1 {
+    background-color: brown;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    grid-row: box-start / content-end;
+}
+
+.content {
+    background-color: chartreuse;
+    grid-row: content-start / content-end;
+    grid-column: col-start 1 / col-end 2;
+}
+
+.footer {
+    background-color: black;
+    grid-row: footer-start / footer-end;
+    grid-column:col-start 1 / col-end 3;
+}

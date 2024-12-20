@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: none;
+    position: absolute;
+}
+
+.sidebar {
+    width: 25vw;
+    height:100vh;
+    background-color: #F44336;
+    color: white;
+    padding-left:2vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.closebtn {
+    width: 100%;
+    font-size: 2vw;
+    background-color: #F44336;
+    border: none;
+    color: white;
+    margin-bottom: 15vh;
+    padding: 2px 0;
+    visibility: hidden;
+}
+
+.closebtn:hover {
+    background-color: white;
+    color: #F44336;
+    cursor: pointer;
+}
+
+.sidebar h1 {
+    font-size: 2.6vw;
+    margin-bottom: 15.5vh;
+}
+
+.menu-items {
+    display: flex;
+    font-size: 1.5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6vh;
+    cursor: pointer;
+}
+
+.menu-items h4:hover {
+    background-color: white;
+    color: #F44336;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.first-container h1 {
+    font-size: 4vw;
+    line-height: 14vh;
+    padding-left: 40px;
+}
+
+.second-container {
+    font-size: 4vw;
+    line-height: 14vh;
+    margin-top: 8vh;
+}
+
+.third-container {
+    font-size: 4vw;
+    line-height: 14vh;
+    margin-top: 8vh;
+}
+
+.para1 {
+    margin-bottom: 5vh;
+}
+
+.second-container p {
+    font-size: 1.2vw;
+    line-height: 17px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.third-container p {
+    font-size: 1.2vw;
+    line-height: 17px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.third-container .para3 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+.title {
+    color: #F44336;
+    font-size: 3vw;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.line {
+    width: 4vw;
+    border-radius: 5px;
+    height: 1vh;
+    background-color: #F44336;
+    margin: 2vh 0;
+    margin-left: 40px;
+    margin-bottom: 8vh;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.image-container1 {
+    width: calc(100% - 40px);
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-container1 img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    margin: 0 auto;
+}
+
+.personinfo {
+    background-color: #f1eeed;
+    text-align: start;
+    margin-left: 40px;
+    flex: 1 1 calc(33.333% - 1vw);
+    max-width: 210px;
+}
+
+.personinfo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.personinfo .name {
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.personinfo .occupation {
+    font-size: 1.2vw;
+    color: #626060;
+    margin-bottom: 10px;
+}
+
+.personinfo .detail {
+    font-size: vw;
+    color: #161616;
+    line-height: 1.3;
+}
+
+.forth-container {
+    font-size: 4vw;
+    line-height: 14vh;
+    margin-top: 8vh;
+}
+
+.forth-container p {
+    margin-right: 40px;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    align-items: stretch;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.pricing-plan {
+    flex: 1;
+    max-width: 360px;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 1.3vw;
+    color: #555;
+}
+
+.pricing-plan .price {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.pricing-plan .price span {
+    display: block;
+    font-size: 1.3vw;
+    color: #777;
+    margin-top: 5px;
+}
+
+.pricing-plan button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pricing-plan button:hover {
+    background-color: #d32f2f;
+}
+
+.pricing-plan.basic .titleBasic {
+    background-color: #616161;
+    color: white;
+    font-size: 1.8vw;
+    padding: 10px;
+}
+
+.pricing-plan.pro .titlePro {
+    background-color: #F44336;
+    color: white;
+    font-size: 1.8vw;
+    padding: 10px;
+}
+
+.fifth-container {
+    font-size: 4vw;
+    line-height: 14vh;
+    margin-top: 8vh;
+}
+
+.para1 {
+    margin-bottom: 5vh;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    line-height: 30px;
+
+}
+
+.contact-form label {
+    font-size: 1.3vw;
+    color: #0f0f0f;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 8px;
+    font-size: 1vw;
+    border: 1px solid #908c8c;
+}
+
+.contact-form button {
+    max-width: 900px;
+    padding: 10px 15px;
+    font-size: 1.3vw;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #a8a5a5;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        gap: 5vw;
+        background-color: #F44336;
+        color: white;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 2vw;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .active {
+        background-color: #F44336;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 4vw;
+        color: white;
+    }
+
+    .closebtn {
+        visibility: visible;
+    }
+
+   }
+
+@media only screen and (max-width: 768px) {
+    .closebtn {
+        display: block;
+    }
+
+    .sidebar .hamburger {
+        display: none;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        gap:12vh;
+    }
+
+    /* .pricing-plan {
+        max-width: 90%;
+    } */
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:12vh;
+    }
+}

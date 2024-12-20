@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button{
+            display: table;
+            margin: 40px auto;
+            background: white;
+            position:relative;
+            border-radius: 5px;                
+            font-size: 24px;
+            border:2px solid rgb(7, 5, 154);
+            cursor: pointer; 
+        }
+        
+        .blankdiv{
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:0px;
+            top:0px;
+            background: blue;
+            border-radius: 5px; 
+            opacity: 0;    
+            animation:blankdivEffect 3s 0s infinite linear;    
+        }
+
+        @keyframes blankdivEffect{
+            0%{
+                transform:scale(1,1);
+                opacity: 0;
+            }
+            50%{
+                transform:scale(1.5,1.5);
+                opacity:0.5;
+            }
+            100%{
+                transform:scale(1,1);
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+        <button class="clickme">Click me <div class="blankdiv"></div></button>
+    
+</body>
+</html>
